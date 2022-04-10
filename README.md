@@ -6,7 +6,7 @@ A complete data science AI framework to manage live Supply Chain Rx Inventory ER
 #### Contact: info@elishconsulting.com
 #### License: Creative Commons, CC0 1.0 Universal
 
-#### Documentation: https://amitxshukla.github.io/Rx-SupplyChain-Analytics-with-PredictiveAI/#/ai
+#### Documentation: https://amitxshukla.github.io/RxSCMAI/#/ai
 
 *please do not clone, @copyright <a href="www.elishconsulting.com">www.elishconsulting.com</a>*
 
@@ -114,10 +114,10 @@ user login to Healthcare OLTP / ERP Application
     CART_ITEMS - Items/Products which are critical to business operations
 
 # License Agreement
-https://raw.githubusercontent.com/AmitXShukla/P2P.ai/main/LICENSE
+https://raw.githubusercontent.com/AmitXShukla/RxSCMAI/main/LICENSE
 
 # Privacy Policy
-https://raw.githubusercontent.com/AmitXShukla/P2P.ai/main/LICENSE
+https://raw.githubusercontent.com/AmitXShukla/RxSCMAI/main/LICENSE
 
 # Aptitudes used
     clipboard
@@ -222,16 +222,16 @@ Business user must have complete visibility and require operation intelligence i
 
 It acts as an AI assistant to help user make quick informed decision. As user input, search for Items, Purchase orders, DocCART or other SCM related information, Olive Loop connects to P2P.ai REST API, which render live data & predictive analytics based on pre-trained AI models, historical transactions stored in system.
 
-[Documentation](https://amitxshukla.github.io/Rx-SupplyChain-Analytics-with-PredictiveAI /#/ai)
+[Documentation](https://amitxshukla.github.io/RxSCMAI /#/ai)
 
 ## application process
-![Application Process](https://github.com/AmitXShukla/Rx-SupplyChain-Analytics-with-PredictiveAI /blob/main/assets/images/app_process.png?raw=true)
+![Application Process](https://github.com/AmitXShukla/RxSCMAI/blob/main/assets/images/app_process.png?raw=true)
 
-*P2P is using a demo database. Please visit [Rx-SupplyChain-Analytics-with-PredictiveAI ](https://amitxshukla.github.io/Rx-SupplyChain-Analytics-with-PredictiveAI /#/ai) for on-premise / cloud database connectivity, AI Model consulting, product and solutions/services.*
+*P2P is using a demo database. Please visit [Rx-SupplyChain-Analytics-with-PredictiveAI ](https://amitxshukla.github.io/RxSCMAI/#/ai) for on-premise / cloud database connectivity, AI Model consulting, product and solutions/services.*
 
 
 Aptitudes used: Clipboard, UI search, network
-[Terms & Conditions](https://raw.githubusercontent.com/AmitXShukla/Rx-SupplyChain-Analytics-with-PredictiveAI /main/LICENSE)
+[Terms & Conditions](https://raw.githubusercontent.com/AmitXShukla/RxSCMAI/main/LICENSE)
 Questions, concerns, or feedback?
 info@elishconsulting.com
 
