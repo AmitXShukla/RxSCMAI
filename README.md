@@ -1,12 +1,14 @@
 # Rx Supply Chain Analytics API with Predictive AI
+
 A complete data science AI framework to manage live Supply Chain Rx Inventory ERPs using Predictive Analytics.
 
 # metadata
-#### Author: Amit Shukla
-#### Contact: info@elishconsulting.com
-#### License: Creative Commons, CC0 1.0 Universal
 
-#### Documentation: https://amitxshukla.github.io/RxSCMAI/#/ai
+#### Author: Amit Shukla
+
+#### Contact: amit@elishconsulting.com
+
+#### License: Creative Commons, CC0 1.0 Universal
 
 *please do not clone, @copyright <a href="www.elishconsulting.com">www.elishconsulting.com</a>*
 
@@ -15,28 +17,39 @@ A complete data science AI framework to manage live Supply Chain Rx Inventory ER
 [<img src="https://github.com/AmitXShukla/AmitXShukla.github.io/blob/master/assets/icons/medium.svg" width=40 height=50>](https://medium.com/@Amit_Shukla)
 [<img src="https://github.com/AmitXShukla/AmitXShukla.github.io/blob/master/assets/icons/twitter_1.svg" width=40 height=50>](https://twitter.com/ashuklax)
 
+---
+
+## start here ->
+
+#### Documentation: <https://amitxshukla.github.io/RxSCMAI/#/ai>
+
+---
 
 ## Technologies
+
 ```sbtshell
 Frontend: Olive AI
 Backend: Oracle
 Rest API: Julia, Oracle ADW REST API
 Ai: Julia, Fluxml.ai, H2O.ai, Oracle AutoML
-``` 
+```
 
 # About Rx SupplyChain.ai
+
 Managing supply chain (Procure 2 Pay operations) is always a challenging tasks for any organization whether small, medium and large. And managing these operations effectively become even more critical for Healthcare providers.
 
 Business user must have complete visibility and require operation intelligence information readily available to make quick, effective and informed decisions.
 
-P2P.ai solves this problem. 
+P2P.ai solves this problem.
 
 It acts as an AI assistant to help user make quick informed decision. As user input, search for Items, Purchase orders, DocCART or other SCM related information, Olive Loop connects to P2P.ai REST API, which render live data & predictive analytics based on pre-trained AI models, historical transactions stored in system.
 
 # how does it work
+
 ![Application Process](assets/images/app_process.png)
 
 # Technology stack
+
     Front end: Olive Helps
     Middleware: Olive Loop
     REST API: JuliaLang | Oracle ADW REST API
@@ -46,12 +59,15 @@ It acts as an AI assistant to help user make quick informed decision. As user in
     AI: JuliaLang & FluxML.ai | Oracle AutoML | H2o.ai | Python & Pytorch
 
 # Application Process
+
 ![Application Process](assets/images/Application_Process.png)
 
 # Business Process
+
 ![Business Process](assets/images/ERD_logical.png)
 
 # Physical ERD
+
 ![ERD Diagram](assets/images/ERD_physical.png)
 
 # Technical Flow Diagram
@@ -92,6 +108,7 @@ user login to Healthcare OLTP / ERP Application
     ** in production, backend AI build a unique index tables for elastic search and acknowledge and classify user input search accordingly.
 
 # Dictionary
+
     SCM - Supply chain Management
     AUTO_REPL - Auto replenishment - automated Critical Item order when below threshold
     Rx - Pharmacy
@@ -114,22 +131,27 @@ user login to Healthcare OLTP / ERP Application
     CART_ITEMS - Items/Products which are critical to business operations
 
 # License Agreement
-https://raw.githubusercontent.com/AmitXShukla/RxSCMAI/main/LICENSE
+
+<https://raw.githubusercontent.com/AmitXShukla/RxSCMAI/main/LICENSE>
 
 # Privacy Policy
-https://raw.githubusercontent.com/AmitXShukla/RxSCMAI/main/LICENSE
+
+<https://raw.githubusercontent.com/AmitXShukla/RxSCMAI/main/LICENSE>
 
 # Aptitudes used
+
     clipboard
     network
     ui
 
 # how Loop/Author uses the user’s information
+
     P2P/ai Olive loop reads clipboard/ user input text and access/search database / AI Prediction analytics through REST API and renders results.
 
     This loop does NOT store any user input information anywhere in application and it does NOT alter/update any back-end information based on Olive Helps loop user input.
 
 # Declare where your loop is sending users’ information, including the subdomain level
+
     loop does NOT send/store any user information, except search strings are used to access API and pull data from database/API.
 
 # Provide documentation and/or source code of how data transmitted from Olive Helps is being consumed and/or persisted
@@ -148,6 +170,7 @@ https://raw.githubusercontent.com/AmitXShukla/RxSCMAI/main/LICENSE
     No data will be transmitted outside of the US
 
 # how to trigger each type of Whisper or workflow within the Loop
+
     user login to Healthcare OLTP / ERP Application
     user input
     for example, PO12345 | VNDR12345 | ITEM12345 (use these string for **demo)
@@ -183,26 +206,27 @@ https://raw.githubusercontent.com/AmitXShukla/RxSCMAI/main/LICENSE
     ** in demo environment, use input such as - PO12345 | VNDR12345 | ITEM12345
     ** in production, backend AI build a unique index tables for elastic search and acknowledge and classify user input search accordingly.
 
-
 # Submit detailed explanations of any non-obvious features, including supporting documentation where appropriate
+
     this loop also used a pre-trained spacy.io NLP model
 
     please see ML_Models folder in GitHub repository.
 
 # loop is utilizing the loopOpenHandler to initiate loop's start whisper upon selection from search dropdown
+
     tested
 
 ---
 
 ## other loops - in active development
+
 - Clinical Trial Loop API
 - Read Text from Images - OCR Loop API
 - Invoice Image AI Alert - file handler loop
-- audio cardiac pulse monitoring AI Alert - file handler loop for 
+- audio cardiac pulse monitoring AI Alert - file handler loop for
 
 fix readme
 create docs and images
-
 
 ---
 
@@ -212,28 +236,27 @@ Procure to Pay
 
 P2P.ai - A complete data science framework to manage live Supply Chain Rx Inventory, ERP, Predictive Analytics
 
-
 # about P2P.ai
+
 Managing supply chain (Procure to Pay operations) is always a challenging tasks for any organization whether small, medium and large. And managing these operations effectively become even more critical for Healthcare providers.
 
 Business user must have complete visibility and require operation intelligence information readily available to make quick, effective and informed decisions.
 
-**P2P.ai** solves this problem. 
+**P2P.ai** solves this problem.
 
 It acts as an AI assistant to help user make quick informed decision. As user input, search for Items, Purchase orders, DocCART or other SCM related information, Olive Loop connects to P2P.ai REST API, which render live data & predictive analytics based on pre-trained AI models, historical transactions stored in system.
 
-[Documentation](https://amitxshukla.github.io/RxSCMAI /#/ai)
+[Documentation](<https://amitxshukla.github.io/RxSCMAI> /#/ai)
 
 ## application process
+
 ![Application Process](https://github.com/AmitXShukla/RxSCMAI/blob/main/assets/images/app_process.png?raw=true)
 
-*P2P is using a demo database. Please visit [Rx-SupplyChain-Analytics-with-PredictiveAI ](https://amitxshukla.github.io/RxSCMAI/#/ai) for on-premise / cloud database connectivity, AI Model consulting, product and solutions/services.*
-
+*P2P is using a demo database. Please visit [Rx-SupplyChain-Analytics-with-PredictiveAI](https://amitxshukla.github.io/RxSCMAI/#/ai) for on-premise / cloud database connectivity, AI Model consulting, product and solutions/services.*
 
 Aptitudes used: Clipboard, UI search, network
 [Terms & Conditions](https://raw.githubusercontent.com/AmitXShukla/RxSCMAI/main/LICENSE)
 Questions, concerns, or feedback?
 info@elishconsulting.com
 
-
-#2E75B6
+# 2E75B6

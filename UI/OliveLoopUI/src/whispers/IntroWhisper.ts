@@ -72,7 +72,7 @@ export default class IntroWhisper {
     // Intro message.
     const introMessage: whisper.Message = {
       type: whisper.WhisperComponentType.Message,
-      body: 'P2P is using a demo database. Please visit https://amitxshukla.github.io/P2P.ai/#/ai for documentation, on-premise / cloud database connectivity, AI Model services.',
+      body: 'P2P is using a demo database. [Click here](https://amitxshukla.github.io/RxSCMAI/#/ai) for documentation, on-premise / cloud database connectivity, AI Model services.',
       style: whisper.Urgency.Success,
     };
 
@@ -229,10 +229,12 @@ export default class IntroWhisper {
     // };
     const updatableMessage: whisper.Message = {
       type: whisper.WhisperComponentType.Message,
-      header: 'search for .... ',
+      header: 'search for an order or item ',
       // body: this.props.newMessage || 'Type in the field below to search for any input',
-      body: this.props.newMessage,
-      style: whisper.Urgency.Warning,
+      // body: this.props.newMessage,
+      body: "speed up elastic search by prefixing input with module name followed by id number, such as - PO12345 | VNDR12345 | ITEM12345 ...",
+      // style: whisper.Urgency.Warning,
+      style: whisper.Urgency.None,
     };
     const updatableMessageInput: whisper.TextInput = {
       type: whisper.WhisperComponentType.TextInput,

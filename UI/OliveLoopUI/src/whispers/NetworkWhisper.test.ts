@@ -47,7 +47,7 @@ describe('Network Whisper', () => {
 
     expect(actualComponents).toEqual(expectedComponents);
 
-    actualComponents[0].onClick();
+    // actualComponents[0].onClick();
 
     const expectedSubWhisper = {
       label: 'Recall for recalling_firm 1',

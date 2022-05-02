@@ -9,9 +9,7 @@ interface Props {
 }
 export default class NetworkWhisper {
   whisper: whisper.Whisper;
-
   label: string;
-
   props: Props;
 
   constructor(recalls: Recall[]) {
@@ -25,63 +23,32 @@ export default class NetworkWhisper {
     const components = [];
     this.props.recalls.forEach((recall) => {
       components.push({
-        type: whisper.WhisperComponentType.Link,
-        text: `${recall.entity} - ${recall.unit} : ${recall.status}`,
-        onClick: () => {
-          const markdown = stripIndent`
-          # ALERT
-          ${recall.last_updated} :- 
-          ${recall.message}
-          `;
+        type: whisper.WhisperComponentType.Message,
+        // text: `${recall.last_updated} : ${recall.entity} - ${recall.unit} : ${recall.status} - ${recall.message} \n\n`,
+        body: `${recall.last_updated} : ${recall.entity} - ${recall.unit} : ${recall.status} - ${recall.message} \n\n`,
+        style: whisper.Urgency.None,
+        // onClick: () => {
+        //   const markdown = stripIndent`
+        //   # ALERT
+        //   ${recall.last_updated} :-
+        //   ${recall.message}
+        //   `;
 
-          whisper.create({
-            label: `Alert for ${recall.unit}`,
-            components: [
-              {
-                type: whisper.WhisperComponentType.Markdown,
-                body: markdown,
-              },
-            ],
-          });
-        },
+        //   whisper.create({
+        //     label: `Alert for ${recall.unit}`,
+        //     components: [
+        //       {
+        //         type: whisper.WhisperComponentType.Markdown,
+        //         body: markdown,
+        //       },
+        //     ],
+        //   });
+        // },
       });
     });
 
     return components;
   }
-  // createComponents() {
-  //   const components = [];
-  //   this.props.recalls.forEach((recall) => {
-  //     components.push({
-  //       type: whisper.WhisperComponentType.Link,
-  //       text: `${recall.recalling_firm} (${recall.recall_initiation_date})`,
-  //       onClick: () => {
-  //         const markdown = stripIndent`
-  //         # Recalling Firm
-  //         ${recall.recalling_firm}
-  //         # Recall Number
-  //         ${recall.recall_number}
-  //         # Product Description
-  //         ${recall.product_description}
-  //         # Reason for Recall
-  //         ${recall.reason_for_recall}
-  //         `;
-
-  //         whisper.create({
-  //           label: `Recall for ${recall.recalling_firm}`,
-  //           components: [
-  //             {
-  //               type: whisper.WhisperComponentType.Markdown,
-  //               body: markdown,
-  //             },
-  //           ],
-  //         });
-  //       },
-  //     });
-  //   });
-
-  //   return components;
-  // }
 
   show() {
     whisper
